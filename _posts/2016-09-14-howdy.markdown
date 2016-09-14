@@ -46,9 +46,6 @@ Maybe I'll put an image below here?
 <div class="img_row">
 	<img class="col three" src="/img/node.png">
 </div>
-<div class="img_row">
-	<img class="col three" src="{{ site.baseurl }}/img/node.png">
-</div>
 <div class="col three caption">
 	A simple, elegant, untainted Node. 
 </div>
