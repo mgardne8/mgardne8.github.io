@@ -1,0 +1,69 @@
+---
+layout: post
+title:  Howdy Earth
+date: 2016-09-14 17:06:00
+description: Is this thing on?
+---
+Lets see, Code highlighting?
+{% highlight python %}
+class Node(object):
+    def __init__(self, value: int = None, next_node=None):
+        if isinstance(value, int):
+            self.__value = value
+        else:
+            raise Exception('Invalid value sent to Node.__init__, not type\'Int\'')
+
+        if isinstance(next_node, Node) or next_node is None:
+            self.__next_node = next_node
+        else:
+            raise Exception('Invalid next_node sent to Node.__init__, not type \'Node\' or \'None\'')
+
+    @property
+    def value(self):
+        return self.__value
+
+    @value.setter
+    def value(self, value):
+        if isinstance(value, int):
+            self.__value = value
+        else:
+            raise Exception('Attempted to set Invalid value inside a Node; not type \'Int\'')
+
+    @property
+    def next_node(self):
+        return self.__next_node
+
+    @next_node.setter
+    def next_node(self, next_node):
+        if isinstance(next_node, Node) or next_node is None:
+            self.__next_node = next_node
+        else:
+            raise Exception('Attempted to set Invalid object to next_node inside a Node; not type \'Node\' or \'None\'')
+{% endhighlight %}
+
+
+Maybe I'll put an image below here?
+<div class="img_row">
+	<img class="col three" src="/img/node.png">
+</div>
+<div class="img_row">
+	<img class="col three" src="{{ site.baseurl }}/img/node.png">
+</div>
+<div class="col three caption">
+	A simple, elegant, untainted Node. 
+</div>
+
+
+#### Some stuff I might do here someday.
+<ul>
+	<li>Write RestEasy for the <s>4th</s> <s>5th</s> 6th time, and maybe share it this time.</li>
+	<li>Teach the Dummies in Discord nodes and lists!</li>
+	<li>Write any useful code at all.</li>
+</ul>
+
+
+And lets finish it all out by trying a blockquote!
+<blockquote>
+	I am lazy, but for some reason, I am so paranoid that I end up working hard.
+	—Seth Rogen
+</blockquote>

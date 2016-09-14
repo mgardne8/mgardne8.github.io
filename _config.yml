@@ -1,0 +1,20 @@
+# Site settings
+title: Hopeless (Concepts and Code)
+email: you@example.com
+description: >
+  A lot of hopeless concepts and code may be found here, but probably not.
+baseurl:  # the subpath of your site, e.g. /blog/
+url:  # the base hostname & protocol for your site
+github_username:  mgardne8
+
+# Build settings
+markdown: kramdown
+
+highlighter: pygments
+
+# Pagination
+paginate: 15
+paginate_path: "/blog/page:num/"
+
+
+collections:
